@@ -1,10 +1,10 @@
 import './App.css'
-import Dashboard from './components/dashboard'
+import Monopol from './components/monopol/index.tsx';
 
 function App() {
   return (
     <>
-     <Dashboard />
+     <Monopol />
     </>
   )
 }
