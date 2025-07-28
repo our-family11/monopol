@@ -9,7 +9,7 @@ export interface Card {
 }
 
 export enum CARD_TYPE {
-    Command = 'Command', Surprise = 'Surprise', Memory = 'Memory'
+    Command = 'Command', Surprise = 'Surprise', Memory = 'Memory', Property = 'Property'
 };
 const CARD_DATA: Card[] = [
     {
@@ -45,6 +45,21 @@ const CARD_DATA: Card[] = [
         action: (player: Player, game: any) => {
             game.setPlayers((prevPlayers: any) => movePlayerTo(prevPlayers, player.id, 0));
         }
+    },
+    {
+        id: 6,
+        type: CARD_TYPE.Surprise,
+        text: "מה הזיכרון הכי מצחיק שלך מחופשה משפחתית?",
+    },
+    {
+        id: 7,
+        type: CARD_TYPE.Surprise,
+        text: "מה התכונה הכי מצחיקה של אמא/אבא?",
+    },
+    {
+        id: 8,
+        type: CARD_TYPE.Surprise,
+        text: "אם הייתם יכולים לבחור לאכול ארוחת ערב עם כל בן משפחה בעולם, במי הייתם בוחרים ולמה?",
     },
     // ... קלפים נוספים
 ];
